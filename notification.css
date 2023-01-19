@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(211, 68%, 94%);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 20%;
+    padding: 2%;
+    background-color: white;
+    border-radius: 5%;
+    color: hsl(219, 12%, 42%);
+}
+
+.notificationCircle {
+    background-color: hsl(1, 90%, 64%);
+    padding: 4px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    bottom: 3px;
+    margin-left: 5px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    flex-grow: 1;
+    font-weight: 800;
+    align-self: center;
+    display: flex;
+    gap: 2%;
+    color: black;
+}
+
+.number {
+    background-color: hsl(219, 85%, 26%);
+    color: white;
+    padding: 2px 10px;
+    border-radius: 20%;
+    font-size: 50%;
+    margin: auto 0;
+}
+
+.read:hover {
+    cursor: pointer;
+    color: hsl(219, 85%, 26%);
+}
+
+main {
+   display: flex;
+    flex-direction: column;
+}
+
+img {
+    height: auto;
+    width: 10%;
+    float: left;
+    margin: 0 3%;
+}
+
+.notRead {
+    background-color: hsl(211, 68%, 94%);
+}
+
+.notificationLine {
+    padding: 2%;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.name {
+    color: #1C202B;
+    font-weight: 800;
+}
+
+.name:hover {
+    cursor: pointer;
+    color: hsl(219, 85%, 26%);
+}
+
+.specialNameActive {
+    color: hsl(219, 85%, 26%);
+    font-weight: 800;
+}
+
+.specialNameNonActive {
+    color: hsl(219, 12%, 42%);
+    font-weight: 800;
+}
+
+.notificationTime {
+    color: hsl(219, 14%, 63%);
+}
+
+.quote {
+    border: 2px solid hsl(211, 68%, 94%);
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.quote:hover {
+    background-color: hsl(211, 68%, 94%);
+    cursor: pointer;
+}
+
+.textFix {
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 818px){
+    .notificationLine, .read, h1, .number {
+        font-size: 90%;
+    }
+
+    .number {
+        padding: 1px 5px;
+    }
+}
